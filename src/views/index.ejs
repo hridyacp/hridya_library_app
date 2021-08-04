@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+   
+</head>
+<body>
+  <div class="banner">
+    <header class="navbar navbar-bright" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Home</a>
+          </div>
+          <nav  role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+             <%for(i=0;i<nav.length;i++){%>
+              <li>
+                <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+              </li>
+            <%}%>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="row">
+    <h1 id="heads">Library</h1>
+  </div>
+  <div class="row">
+    
+    <div class="col-md-12">
+    <h3 id="quote">"Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers."
+      ― Charles W. Eliot</h3>
+      </div>
+     
+    
+    <div class="row">
+      <div class="col-md-12">
+       <br>
+       <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="members">
+    <div class="row">
+      <div class="col-md-12">
+      <h2 id="heads1">What our members say!</h2>
+    </div>
+  </div>
+     <div class="row">
+       <div class="col-md-4">
+        <div class="card" style="width: 30rem;">
+          <div class="card-body" style="margin-left: 15%; text-align: justify;">
+            <p class="card-text">"Listen up, the library is cool and we all secretly know it. But what's even cooler is that this app lets you borrow e-books, audiobooks, music, and more for free."</p>
+          </div>
+        </div>
+    </div>
+      <div class="col-md-4">
+       <div class="card" style="width: 30rem;">
+         <div class="card-body" style="margin-left: 15%; text-align: justify;">
+           <p class="card-text">"This app give access to multiple contents with a potentially infinite number of resources and selections at hand. We can access an enormous amount of knowledge, facilitating the expansion of education. "</p>
+         </div>
+       </div>
+   </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 30rem;">
+        <div class="card-body" style="margin-left: 10%; text-align: justify;">
+          <p class="card-text">"Put your local library in your pocket with this app, an ebook- and audiobook-borrowing app with a wealth of literary offerings available on demand."</p>
+        </div>
+      </div>
+    </div>
+    </div> 
+  </div>
+  <!-- Books -->
+  <div id="booksdetail">
+  <div class="row">
+    <div class="col-md-12">
+   <h2>You will find</h2>
+    </div>
+    </div>
+</div>
+<div class="row">
+  <div class=col-md-12 style="text-align: center;">
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <h3 style="font-family: cursive;">Entertainment</h3>
+      <img src="images/inmjeeves.jpg" style="width:30%; height: 400px;">
+      <img src="images/midnightside.jpg" style="width:30%; height:400px;">
+      <img src="images/memmidnight.jpg" style="width:30%; height:400px;">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <h3 style="font-family: cursive;">Education</h3>
+      <img src="images/javascriptbook.jpg" style="width:30%; height:400px;">
+      <img src="images/expressjsbook.jpg" style="width:30%; height: 400px;">
+      <img src="images/nodejsbook.jpg" style="width:30%; height:400px;">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <h3 style="font-family: cursive;">Kids Learning</h3>
+      <img src="images/tinklesup.jpg" style="width:30%; height:400px;">
+      <img src="images/chefs.jpg" style="width:30%; height:420px;">
+      <img src="images/balarama.jpg" style="width:30%; height:400px;">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+      <h4>Connect with us at</h4>
+      </div>
+      <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-facebook-square" id="fb"></i>
+  
+      </div>
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-twitter-square" id="twitter"></i>
+  
+      </div>
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-instagram-square" id="insta"></i>
+  
+      </div>
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <i class="fab fa-linkedin-in" id="linkedln"></i>
+  
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://mdbootstrap.com/"> LibraryApp.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+    <script src="https://kit.fontawesome.com/864a7bb157.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/carous.js"></script>
+
+</body>
+</html>
